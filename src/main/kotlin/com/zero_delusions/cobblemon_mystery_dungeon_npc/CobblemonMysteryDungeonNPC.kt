@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer
 import org.slf4j.LoggerFactory
 
 object CobblemonMysteryDungeonNPC : ModInitializer {
+	const val MOD_ID = "cobblemon-mystery-dungeon-npc"
     private val logger = LoggerFactory.getLogger("cobblemon-mystery-dungeon-npc")
 
 	override fun onInitialize() {
