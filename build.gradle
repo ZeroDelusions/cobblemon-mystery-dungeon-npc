@@ -15,6 +15,9 @@ repositories {
 	maven {
 		url = uri("https://maven.impactdev.net/repository/development/")
 	}
+	maven {
+		url = uri('https://maven.isxander.dev/releases')
+	}
 }
 
 loom {
@@ -43,6 +46,8 @@ dependencies {
 
 	// Cobblemon
 	modImplementation("com.cobblemon:fabric:${cobblemon_version}")
+	// YACL
+	modImplementation("dev.isxander:yet-another-config-lib:${project.yacl_version}")
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
