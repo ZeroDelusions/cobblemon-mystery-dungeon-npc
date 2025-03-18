@@ -1,0 +1,55 @@
+{
+	"schemaVersion": 1,
+	"id": "cobblemon-mystery-dungeon-npc",
+	"version": "${version}",
+	"name": "Cobblemon: Mystery Dungeon NPC",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/cobblemon-mystery-dungeon-npc/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "com.zero_delusions.cobblemon_mystery_dungeon_npc.CobblemonMysteryDungeonNPC",
+				"adapter": "kotlin"
+			}
+		],
+		"client": [
+			{
+				"value": "com.zero_delusions.cobblemon_mystery_dungeon_npc.CobblemonMysteryDungeonNPCClient",
+				"adapter": "kotlin"
+			}
+		],
+		"fabric-datagen": [
+			{
+				"value": "com.zero_delusions.cobblemon_mystery_dungeon_npc.CobblemonMysteryDungeonNPCDataGenerator",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"cobblemon-mystery-dungeon-npc.mixins.json",
+		{
+			"config": "cobblemon-mystery-dungeon-npc.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*",
+	  	"cobblemon": ">=1.6.1"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
