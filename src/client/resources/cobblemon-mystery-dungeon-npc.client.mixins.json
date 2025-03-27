@@ -3,8 +3,7 @@
   "package": "com.zero_delusions.cobblemon_mystery_dungeon_npc.mixin.client",
   "compatibilityLevel": "JAVA_21",
   "client": [
-	"ExampleClientMixin",
-	"PartySendBindingMixin"
+	"ExampleClientMixin"
   ],
   "injectors": {
 	"defaultRequire": 1
