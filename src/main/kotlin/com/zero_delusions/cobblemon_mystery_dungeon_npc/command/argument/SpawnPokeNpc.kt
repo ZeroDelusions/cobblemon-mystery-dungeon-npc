@@ -71,7 +71,7 @@ object SpawnPokeNpc {
         }
 
         val properties = PokeNpcPropertiesArgumentType.getPokemonProperties(context, PROPERTIES)
-        properties.customProperties.add(PokeNpcProperty.npc(true))
+        properties.customProperties.add(PokeNpcProperty.fromString(null))
 
         if (properties.species == null) {
             throw NO_SPECIES_EXCEPTION.create()

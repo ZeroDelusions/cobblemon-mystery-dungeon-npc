@@ -42,15 +42,13 @@ class PokeNpcPropertiesArgumentType: ArgumentType<PokemonProperties> {
         if (sections.isEmpty())
             return this.suggestSpeciesAndPropertyKeys(builder)
         val currentSection = sections.last()
-        /**
-         * We already have a property defined and a potential value, let's try to suggest values based on provided [CustomPokemonPropertyType.examples]
-         */
+
         if (currentSection.contains(ASSIGNER)) {
             val propertyKey = currentSection.substringBefore(ASSIGNER)
             val currentValue = currentSection.substringAfter(ASSIGNER)
             return PropertiesCompletionProvider.suggestValues(propertyKey, currentValue, builder)
         }
-        // We will always assume a species identifier has the priority as the first command argument as that's the most traditional approach as such lets provide property keys for the suggestion
+
         else if (sections.size >= 2) {
             val usedKeys = sections.filter { it.contains("=") }.map { it.substringBefore("=") }.toSet()
             return PropertiesCompletionProvider.suggestKeys(currentSection, usedKeys, builder)
