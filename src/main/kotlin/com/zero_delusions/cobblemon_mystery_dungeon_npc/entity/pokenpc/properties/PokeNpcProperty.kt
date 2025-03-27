@@ -40,10 +40,7 @@ object PokeNpcProperty: CustomPokemonPropertyType<StringProperty> {
     override fun fromString(value: String?): StringProperty = StringProperty(
         key = keys.first(),
         value = keys.first(),
-        applicator = { pokemon, _ -> run {
-            pokemon.forcedAspects += keys.first()
-            pokemon.updateAspects()
-        } },
+        applicator = { pokemon, _ -> pokemon.forcedAspects += keys.first() },
         matcher = { pokemon, _ -> keys.first() in pokemon.aspects }
     )
 }

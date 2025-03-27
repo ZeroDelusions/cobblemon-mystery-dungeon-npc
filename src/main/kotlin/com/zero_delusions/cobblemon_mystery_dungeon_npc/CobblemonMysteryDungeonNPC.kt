@@ -1,12 +1,9 @@
 package com.zero_delusions.cobblemon_mystery_dungeon_npc
 
-import com.cobblemon.mod.common.api.events.CobblemonEvents
 import com.cobblemon.mod.common.api.pokemon.PokemonSpecies
-import com.cobblemon.mod.common.api.properties.CustomPokemonProperty
 import com.zero_delusions.cobblemon_mystery_dungeon_npc.core.command.PokeNpcCommands
 import com.zero_delusions.cobblemon_mystery_dungeon_npc.core.config.ServerConfig
 import com.zero_delusions.cobblemon_mystery_dungeon_npc.entity.pokenpc.AllowedPokeNpc
-import com.zero_delusions.cobblemon_mystery_dungeon_npc.entity.pokenpc.properties.PokeNpcProperty
 import net.fabricmc.api.ModInitializer
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback
 import org.slf4j.LoggerFactory
