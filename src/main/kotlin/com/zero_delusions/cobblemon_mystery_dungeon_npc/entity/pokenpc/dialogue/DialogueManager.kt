@@ -1,6 +1,13 @@
 package com.zero_delusions.cobblemon_mystery_dungeon_npc.entity.pokenpc.dialogue
 
-import java.util.UUID
+import java.util.*
+import kotlin.collections.ArrayDeque
+import kotlin.collections.List
+import kotlin.collections.Map
+import kotlin.collections.emptyList
+import kotlin.collections.filter
+import kotlin.collections.isNotEmpty
+import kotlin.collections.mutableSetOf
 
 data class DialogueNode(
     val id: String = UUID.randomUUID().toString(),

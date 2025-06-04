@@ -1,11 +1,7 @@
 package com.zero_delusions.cobblemon_mystery_dungeon_npc.mixin;
 
 import com.cobblemon.mod.common.Cobblemon;
-import com.cobblemon.mod.common.api.properties.CustomPokemonProperty;
-import com.cobblemon.mod.common.command.argument.PokemonPropertiesArgumentType;
 import com.zero_delusions.cobblemon_mystery_dungeon_npc.command.argument.PokeNpcPropertiesArgumentType;
-import com.zero_delusions.cobblemon_mystery_dungeon_npc.entity.pokenpc.AllowedPokeNpc;
-import com.zero_delusions.cobblemon_mystery_dungeon_npc.entity.pokenpc.properties.PokeNpcProperty;
 import kotlin.jvm.JvmClassMappingKt;
 import kotlin.reflect.KClass;
 import net.minecraft.commands.synchronization.SingletonArgumentInfo;

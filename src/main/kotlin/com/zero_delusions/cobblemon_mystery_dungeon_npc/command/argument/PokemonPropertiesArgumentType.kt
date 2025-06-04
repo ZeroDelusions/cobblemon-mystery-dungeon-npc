@@ -4,7 +4,6 @@ package com.zero_delusions.cobblemon_mystery_dungeon_npc.command.argument
 
 import com.cobblemon.mod.common.Cobblemon
 import com.cobblemon.mod.common.api.pokemon.PokemonProperties
-import com.cobblemon.mod.common.api.properties.CustomPokemonPropertyType
 import com.cobblemon.mod.common.pokemon.properties.PropertiesCompletionProvider
 import com.mojang.brigadier.StringReader
 import com.mojang.brigadier.arguments.ArgumentType

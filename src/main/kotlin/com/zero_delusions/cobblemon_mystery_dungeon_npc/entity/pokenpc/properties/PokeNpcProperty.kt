@@ -1,8 +1,6 @@
 package com.zero_delusions.cobblemon_mystery_dungeon_npc.entity.pokenpc.properties
 
 import com.cobblemon.mod.common.api.properties.CustomPokemonPropertyType
-import com.cobblemon.mod.common.entity.pokemon.PokemonEntity
-import com.cobblemon.mod.common.pokemon.properties.BooleanProperty
 import com.cobblemon.mod.common.pokemon.properties.StringProperty
 
 //object PokeNpcProperty: CustomPokemonPropertyType<BooleanProperty> {
